@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-kodisnft-dev-234742-authRole",
+      "UnauthRoleArn": "arn:aws:iam::408003697004:role/amplify-kodisnft-dev-234742-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::408003697004:role/amplify-kodisnft-dev-234742-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-kodisnft-dev-234742-deployment",
+      "UnauthRoleName": "amplify-kodisnft-dev-234742-unauthRole",
+      "StackName": "amplify-kodisnft-dev-234742",
+      "StackId": "arn:aws:cloudformation:ap-south-1:408003697004:stack/amplify-kodisnft-dev-234742/ebc27030-86af-11ec-9e42-02da93b980e2",
+      "AmplifyAppId": "d3jnzoorry58ic"
+    },
+    "categories": {
+      "auth": {
+        "kodisnft33052bce": {}
+      }
+    }
+  }
+}

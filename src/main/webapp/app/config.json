@@ -1,0 +1,24 @@
+[
+  {
+    "storageToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDZGZDIyNzZDYWExNTM2MjgwQjViMTE1NTQ3OThiOWFlODZmNTc0NmEiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2NTQ0MDUxMDk5MTcsIm5hbWUiOiJHZW5lcmFsIn0.DiWavS9lkST1Vlkd9h-kwKiuBlTleMyvxi-IH57QGKs",
+    "ipfsGateway": "https://ipfs.io/ipfs/",
+    "blockExplorer": "https://testnet.algoexplorer.io/",
+    "algod": "https://testnet-api.algonode.cloud",
+    "algodToken": "e49cd451-e04b-4fa8-9034-aae16c8d0d4d",
+    "network": "TestNet"
+  },
+  {
+    "storageToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDZGZDIyNzZDYWExNTM2MjgwQjViMTE1NTQ3OThiOWFlODZmNTc0NmEiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2NTQ0MDUxMDk5MTcsIm5hbWUiOiJHZW5lcmFsIn0.DiWavS9lkST1Vlkd9h-kwKiuBlTleMyvxi-IH57QGKs",
+    "ipfsGateway": "https://ipfs.io/ipfs/",
+    "blockExplorer": "https://algoexplorer.io/",
+    "algod": "https://mainnet-api.algonode.cloud",
+    "network": "SandNet"
+  },
+  {
+    "storageToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDZGZDIyNzZDYWExNTM2MjgwQjViMTE1NTQ3OThiOWFlODZmNTc0NmEiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2NTQ0MDUxMDk5MTcsIm5hbWUiOiJHZW5lcmFsIn0.DiWavS9lkST1Vlkd9h-kwKiuBlTleMyvxi-IH57QGKs",
+    "ipfsGateway": "https://ipfs.io/ipfs/",
+    "blockExplorer": "https://algoexplorer.io/",
+    "algod": "https://mainnet-api.algonode.cloud",
+    "network": "MainNet"
+  }
+]

@@ -1,0 +1,47 @@
+<script>
+	async function sendRequest() {
+		const MyAlgoConnect = (await import('@randlabs/myalgo-connect')).default;
+		const algosdk = (await import('algosdk')).default;
+
+		const algodToken = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+		const algodServer = 'https://node.testnet.algoexplorerapi.io';
+		const algodPort = 443;
+
+		// 1. Init clients
+
+		const client = new algosdk.Algodv2(algodToken, algodServer, algodPort);
+		const myalgo = new MyAlgoConnect();
+
+		// 2. Connect and get accounts
+
+		const accounts = await myalgo.connect();
+		console.log(accounts);
+
+		// 3. Get suggested params
+
+		const sp = await client.getTransactionParams().do();
+		console.log(sp);
+
+		// 4. Build transaction
+
+		const txn = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
+			from: 'UM4XZ727Q3AOO4M556GCSMINYSVU6VYU7OXTYUF4PKQD5HPGTMARUQGNAE',
+			to: 'RDNV3TEDD4OFYCG2EKDGJTY26NG2RWJ2OEH3HFJAKGCTJM67J7FR43QV3Y',
+			amount: 1_000_000,
+			suggestedParams: sp
+		});
+		console.log(txn);
+
+		// 5. Sign transaction
+
+		const txnSigned = await myalgo.signTransaction(txn.toByte());
+		console.log(txnSigned);
+
+		// 6. Send transaction
+
+		const res = await client.sendRawTransaction(txnSigned.blob).do();
+		console.log(res);
+	}
+</script>
+
+<button class="btn" on:click={sendRequest}>Send Request</button>
